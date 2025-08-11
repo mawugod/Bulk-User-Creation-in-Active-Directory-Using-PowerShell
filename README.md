@@ -52,7 +52,7 @@ NB: You can manually enter the data into the respective fields but I chose to us
 2. Paste corresponding distinguishedName for each user. Eg. is as seen in the image below
 <img width="975" height="441" alt="image" src="https://github.com/user-attachments/assets/c566530e-c354-4a99-b74e-33f03c69cb0c" />
 
-### Save Correct Format
+## 4. Save Correct Format
 File > Save As > NewUsersFinal.csv
  - Type: CSV UTF-8 (Comma delimited) (*.csv)
 <img width="938" height="175" alt="image" src="https://github.com/user-attachments/assets/6110c74f-4d21-436d-b369-106bd0da5a4f" />
@@ -63,7 +63,7 @@ Visit the link:
 Press the Ctrl + S keys and save the file as **Add-NewUsers.ps1** 
 <img width="378" height="89" alt="image" src="https://github.com/user-attachments/assets/8614027c-ba8a-44bd-b49e-1d7abe497d2d" />
 
-## ⚙️ 4. Prepare Environment
+## ⚙️ 5. Prepare Environment
 
 ### Create directories:
 Create a folder as Temp in the C drive of the Domain Controller and copy the NewUsersFinal.csv file in there. You can use the command line.
@@ -109,7 +109,7 @@ The two commands give an output as below
 
 
 
-## 🚀 5. Configure & Execute Script
+## 🚀 6. Configure & Execute Script
 ### Edit Script (Add-NewUsers.ps1)
 Go to the Script folder and double-click the Add-NewUsers.ps1 script to open.
  - In Line 25: Update CSV path if that is not where you stored it.  
@@ -140,7 +140,7 @@ Set-ExecutionPolicy RemoteSigned -Force
 <img width="975" height="745" alt="image" src="https://github.com/user-attachments/assets/54ca35cd-3847-4488-8f41-6045f639aa10" />
 
 
-## ✅ 6. Verify User Creation
+## ✅ 7. Verify User Creation
 1. Refresh Active Directory Users and Computers
 2. Check users in respective OUs:
   *HR  
